@@ -3,7 +3,6 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdMarkEmailRead } from "react-icons/md";
 import RubberBand from "react-reveal/RubberBand";
-import HeadShake from "react-reveal/HeadShake";
 import Zoom from "react-reveal/Zoom";
 const FirstSection = () => {
   let headerDetails = [
@@ -29,7 +28,10 @@ const FirstSection = () => {
       <section className="fheader">
         <div className="containerDiv">
           <div className="imgDiv">
-            <img src="../images/Profile.png" alt="Profile Img" />
+            <img
+              src="https://github.com/ChibuezeSamObisike/Portfolio-Project/blob/main/src/images/Profile.png"
+              alt="Profile Img"
+            />
           </div>
           <Zoom bottom big>
             <h1>Hello, I am a </h1>
