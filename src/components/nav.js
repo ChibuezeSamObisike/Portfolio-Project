@@ -3,7 +3,9 @@ const NavBar = () => {
     <nav className="containerDivNav">
       <div className="navDiv">
         <div>
-          <h2>Chibueze</h2>
+          <a href="/">
+            <h2>Chibueze</h2>
+          </a>
         </div>
         <div className="navInfo">
           <a

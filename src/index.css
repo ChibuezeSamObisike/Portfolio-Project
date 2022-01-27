@@ -189,8 +189,14 @@ nav {
     .headerP {
         width: 100%;
         white-space: pre-line;
+        text-align: left;
     }
     .containerDivNav {
         margin: 0 70px;
+    }
+    .imgDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
