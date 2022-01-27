@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import LightSpeed from "react-reveal/LightSpeed";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdMarkEmailRead } from "react-icons/md";
+import RubberBand from "react-reveal/RubberBand";
+import HeadShake from "react-reveal/HeadShake";
 import Zoom from "react-reveal/Zoom";
 const FirstSection = () => {
   let headerDetails = [
@@ -27,42 +28,47 @@ const FirstSection = () => {
     <>
       <section className="fheader">
         <div className="containerDiv">
-          <LightSpeed bottom big>
+          <div className="imgDiv">
+            <img src="../images/Profile.png" alt="Profile Img" />
+          </div>
+          <Zoom bottom big>
             <h1>Hello, I am a </h1>
             <h1 className="purple">{headerDetails[index]}</h1>
-          </LightSpeed>
-          <LightSpeed right cascade>
+          </Zoom>
+          <Zoom right cascade>
             <p className="headerP">
-              I implement pixel perfect user interfaces and data driven
+              I implement pixel perfect user interfaces and data<br></br> driven
               applications.
             </p>
-          </LightSpeed>
-          <div className="icons-stuff">
-            <a
-              href="https://github.com/ChibuezeSamObisike"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub className="icon-font" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/chibueze-sam-obisike/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsLinkedin className="icon-font" />
-            </a>
-            <a
-              href="https://twitter.com/unique_Chibueze"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillTwitterCircle className="icon-font" />
-            </a>
-            <a href="mailto: samobisike@gmail.com">
-              <MdMarkEmailRead className="icon-font" />
-            </a>
-          </div>
+          </Zoom>
+          <RubberBand>
+            <div className="icons-stuff">
+              <a
+                href="https://github.com/ChibuezeSamObisike"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub className="icon-font" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/chibueze-sam-obisike/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsLinkedin className="icon-font" />
+              </a>
+              <a
+                href="https://twitter.com/unique_Chibueze"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillTwitterCircle className="icon-font" />
+              </a>
+              <a href="mailto: samobisike@gmail.com">
+                <MdMarkEmailRead className="icon-font" />
+              </a>
+            </div>
+          </RubberBand>
         </div>
       </section>
     </>
