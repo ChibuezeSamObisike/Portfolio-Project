@@ -34,7 +34,7 @@ const FirstSection = () => {
           </LightSpeed>
           <LightSpeed right cascade>
             <p className="headerP">
-              I implement pixel perfect user interfaces and <br></br>data driven
+              I implement pixel perfect user interfaces anddata driven
               applications.
             </p>
           </LightSpeed>
