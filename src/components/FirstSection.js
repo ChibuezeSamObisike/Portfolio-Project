@@ -1,76 +1,69 @@
 import React, { useEffect, useState } from "react";
+import LightSpeed from "react-reveal/LightSpeed";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdMarkEmailRead } from "react-icons/md";
-import RubberBand from "react-reveal/RubberBand";
 import Zoom from "react-reveal/Zoom";
+
 const FirstSection = () => {
   let headerDetails = [
     "Frontend Engineer",
-    "Chattered Software Consultant",
+    "Software Consultant",
     "Embedded Systems Dev",
   ];
   const [index, setIndex] = useState(0);
 
-  const changeInterval = () => {
-    setInterval(() => {
-      let indexVal = 0;
-      !(indexVal + 1 > headerDetails.length - 1) ? indexVal++ : (indexVal = 0);
-      setIndex(indexVal);
-    }, 1000);
-  };
+  let indexVal = index % headerDetails.length;
+  console.log(indexVal);
 
   useEffect(() => {
-    changeInterval();
-  });
+    setInterval(() => {
+      setIndex((index) => index + 1);
+    }, 4000);
+  }, []);
+
   return (
     <>
       <section className="fheader">
         <div className="containerDiv">
-          <div className="imgDiv">
-            <img
-              src="https://github.com/ChibuezeSamObisike/Portfolio-Project/blob/main/src/images/Profile.png"
-              alt="Profile Img"
-            />
-          </div>
-          <Zoom bottom big>
+          <LightSpeed bottom big>
             <h1>Hello, I am a </h1>
-            <h1 className="purple">{headerDetails[index]}</h1>
-          </Zoom>
-          <Zoom right cascade>
+          </LightSpeed>
+          <LightSpeed bottom big>
+            <h1 className="purple">Software Engineer</h1>
+          </LightSpeed>
+          <LightSpeed right cascade>
             <p className="headerP">
-              I implement pixel perfect user interfaces and data<br></br> driven
+              I implement pixel perfect user interfaces and <br></br>data driven
               applications.
             </p>
-          </Zoom>
-          <RubberBand>
-            <div className="icons-stuff">
-              <a
-                href="https://github.com/ChibuezeSamObisike"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsGithub className="icon-font" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/chibueze-sam-obisike/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsLinkedin className="icon-font" />
-              </a>
-              <a
-                href="https://twitter.com/unique_Chibueze"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillTwitterCircle className="icon-font" />
-              </a>
-              <a href="mailto: samobisike@gmail.com">
-                <MdMarkEmailRead className="icon-font" />
-              </a>
-            </div>
-          </RubberBand>
+          </LightSpeed>
+          <div className="icons-stuff">
+            <a
+              href="https://github.com/ChibuezeSamObisike"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub className="icon-font" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/chibueze-sam-obisike/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="icon-font" />
+            </a>
+            <a
+              href="https://twitter.com/unique_Chibueze"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillTwitterCircle className="icon-font" />
+            </a>
+            <a href="mailto: samobisike@gmail.com">
+              <MdMarkEmailRead className="icon-font" />
+            </a>
+          </div>
         </div>
       </section>
     </>
