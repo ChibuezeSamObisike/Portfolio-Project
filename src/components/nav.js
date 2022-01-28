@@ -18,7 +18,7 @@ const NavBar = () => {
           <a href="https://chibueze.hashnode.dev/" target="__blank">
             Blog
           </a>
-          <a href="#skills">My stack</a>
+          <a href="#skills">Stack</a>
         </div>
       </div>
     </nav>

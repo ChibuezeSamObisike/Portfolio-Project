@@ -187,9 +187,10 @@ nav {
         font-size: 24px;
     }
     .headerP {
-        width: 120%;
+        width: 100%;
         white-space: pre-line;
         text-align: left;
+        font-size: 22px;
     }
     .containerDivNav {
         margin: 0 70px;

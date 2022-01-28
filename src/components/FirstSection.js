@@ -1,26 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdMarkEmailRead } from "react-icons/md";
-import Zoom from "react-reveal/Zoom";
 
 const FirstSection = () => {
-  let headerDetails = [
-    "Frontend Engineer",
-    "Software Consultant",
-    "Embedded Systems Dev",
-  ];
-  const [index, setIndex] = useState(0);
+  //   let headerDetails = [
+  //     "Frontend Engineer",
+  //     "Software Consultant",
+  //     "Embedded Systems Dev",
+  //   ];
+  //   const [index, setIndex] = useState(0);
 
-  let indexVal = index % headerDetails.length;
-  console.log(indexVal);
+  //   let indexVal = index % headerDetails.length;
+  //   //console.log(indexVal);
 
-  useEffect(() => {
-    setInterval(() => {
-      setIndex((index) => index + 1);
-    }, 4000);
-  }, []);
+  //   useEffect(() => {
+  //     setInterval(() => {
+  //       setIndex((index) => index + 1);
+  //     }, 4000);
+  //   }, []);
 
   return (
     <>
@@ -34,8 +33,8 @@ const FirstSection = () => {
           </LightSpeed>
           <LightSpeed right cascade>
             <p className="headerP">
-              I implement pixel perfect user interfaces anddata driven
-              applications.
+              I implement pixel perfect user interfaces and data<br></br>
+              driven applications.
             </p>
           </LightSpeed>
           <div className="icons-stuff">
