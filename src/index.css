@@ -156,6 +156,12 @@ nav {
     align-items: center;
 }
 
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 640px) {
     h1 {
         font-size: 54px;
@@ -164,15 +170,15 @@ nav {
         font-size: 24px;
     }
     .containerDiv {
-        margin: 0 70px;
+        margin: 0 40px;
         padding-top: 80px;
     }
     .containerDiv-sm {
-        margin: 0 70px;
+        margin: 0 40px;
     }
     .containerDivBlog {
         margin-top: 30px;
-        margin: 10px 70px;
+        margin: 10px 40px;
         height: 40%;
     }
     .midText {
@@ -193,7 +199,7 @@ nav {
         font-size: 22px;
     }
     .containerDivNav {
-        margin: 0 70px;
+        margin: 0 40px;
     }
     .imgDiv {
         display: flex;
